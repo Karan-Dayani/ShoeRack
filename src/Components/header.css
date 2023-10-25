@@ -5,7 +5,7 @@ header {
     padding: 0 26px;
 }
 
-header a {
+a {
     text-decoration: none;
     color: #979a9b;
     margin: 0 14px;
@@ -13,8 +13,8 @@ header a {
     transition: all 0.5s ease;
 }
 
-header a:hover,
-header .active-link {
+a:hover,
+.active-link {
     color: black;
 }
 
@@ -29,6 +29,54 @@ header .site-logo {
     margin-right: auto;
 }
 
+/* HAMBURGER MENU */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 20px;
+    height: 5px;
+    background-color: #979a9b;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+.toggle-button:hover .bar {
+    background-color: black;
+}
+
+.ham-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.ham-menu a {
+    padding: 5px 0;
+}
+
 @media screen and (max-width: 768px) {
-    
+    .left, #about {
+        display: none;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .site-logo {
+        margin-right: auto;
+    }
 }
