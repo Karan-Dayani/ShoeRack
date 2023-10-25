@@ -1,6 +1,7 @@
 import React from "react";
-import "./home.css"
 import { Link } from "react-router-dom";
+import "./home.css";
+import homeAboutImg from "../assets/images/home-about-img.jpg";
 
 export default function Home() {
     return (
@@ -13,6 +14,15 @@ export default function Home() {
                         <Link className="btn" to="/mens">SHOP MEN</Link>
                         <Link className="btn" to="/womens">SHOP WOMEN</Link>
                     </div>
+                </div>
+            </div>
+            <div className="about-section">
+                <img src={homeAboutImg} alt="shoe-image" />
+                <div className="about-info">
+                    <p>ABOUT US</p>
+                    <h1 className="about-title">Selected materials designed for comfort and sustainability</h1>
+                    <p className="about-text">Nullam auctor faucibus ridiculus dignissim sed et auctor sed eget auctor nec sed elit nunc, magna non urna amet ac neque ut quam enim pretium risus gravida ullamcorper adipiscing at ut magna.</p>
+                    <Link to="/about">READ MORE</Link>
                 </div>
             </div>
             <h1>Hallo Everynian</h1>
