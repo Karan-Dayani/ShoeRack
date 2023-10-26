@@ -6,6 +6,8 @@ import {
     Route
 } from "react-router-dom";
 
+import "./Server.js"
+
 import Layout from "./Components/Layout";
 
 import Home from "./pages/Home";
