@@ -16,6 +16,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
             <div className="about-section">
                 <img src={homeAboutImg} alt="shoe-image" />
                 <div className="about-info">
@@ -25,6 +26,7 @@ export default function Home() {
                     <Link to="/about">READ MORE</Link>
                 </div>
             </div>
+            
             <h1>Hallo Everynian</h1>
         </>
         

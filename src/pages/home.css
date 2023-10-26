@@ -50,7 +50,13 @@
 
 @media screen and (max-width: 768px) {
     .intro-img {
-        height: 400px;
+        max-height: 500px;
+    }
+
+    .intro-title {
+        text-align: center;
+        font-size: 12vw;
+        margin-bottom: 1vh;
     }
 
     .intro-text {
@@ -59,12 +65,13 @@
 
     .intro-btns {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        width: 100%;
     }
 
     .btn {
         padding: 5px;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
