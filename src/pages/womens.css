@@ -1,0 +1,11 @@
+.women {
+    background-color: #F1F1EF;
+}
+
+.women-title {
+    padding: 0 8vw;
+    color: black;
+    margin: 0;
+    font-size: clamp(1rem, 10vw, 4rem);
+    font-weight: 500;
+}

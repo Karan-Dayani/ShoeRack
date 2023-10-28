@@ -269,5 +269,9 @@ createServer({
         this.get("/mens", (schema, request) => {
             return schema.shoes.where({ gender: "Men" })
         })
+
+        this.get("/womens", (schema, request) => {
+            return schema.shoes.where({ gender: "Women"})
+        })
     }
 })
