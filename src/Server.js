@@ -1,4 +1,4 @@
-import { createServer, Model } from "miragejs";
+import { createServer, Model, Response } from "miragejs";
 
 createServer({
     models: {
@@ -264,6 +264,10 @@ createServer({
 
         this.get("/shoes", (schema, request) => {
             return schema.shoes.all()
+        })
+
+        this.get("/mens", (schema, request) => {
+            return schema.shoes.where({ gender: "Men" })
         })
     }
 })
