@@ -11,12 +11,13 @@
 
 .image-div {
     width: inherit;
+    height: 400px;
     overflow: hidden;
 }
 
 .image-div > img {
     width: inherit;
-    transition: 1s ease;
+    transition: 0.6s ease;
 }
 
 .image-div:hover > img {
@@ -45,6 +46,10 @@
     .card {
         width: 150px;
         margin: 10px 10px 0;
+    }
+
+    .image-div {
+        height: auto;
     }
 
     .card-info > h1 {

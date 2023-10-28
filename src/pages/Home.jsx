@@ -1,9 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Suspense } from "react";
+import { Link, useLoaderData, defer, Await } from "react-router-dom";
 import "./home.css";
 import homeAboutImg from "../assets/images/home-about-img.jpg";
+import { getShoes } from "../api";
+import Cards from "../Components/Cards";
+
+export function loader() {
+    return defer({ shoes: getShoes()})
+}
 
 export default function Home() {
+    const shoesObj = useLoaderData()
+
     return (
         <>
             <div className="intro-img">
@@ -26,9 +34,21 @@ export default function Home() {
                     <Link to="/about">READ MORE</Link>
                 </div>
             </div>
+
+            <div className="best-seller">
+                <h1>Our Best Seller</h1>
+                <Suspense fallback={<h1>Loading...</h1>}>
+                    <Await resolve={shoesObj.shoes}>
+                        {(shoes) => {
+                            const shuffled = shoes.sort(() => 0.5 - Math.random());
+                            const bestArr = shuffled.slice(0, 6);
+                            return <Cards data={bestArr} />
+                        }}
+                    </Await>
+                </Suspense>
+            </div>
             
             <h1>Hallo Everynian</h1>
         </>
-        
     )
 }

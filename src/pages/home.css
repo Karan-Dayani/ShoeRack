@@ -141,3 +141,22 @@
         width: auto;
     }
 }
+
+/* BESTSELLER SECTION */
+.best-seller {
+    background-color: #F1F1EF;
+}
+
+.best-seller > h1 {
+    padding: 30px 120px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .best-seller > h1 {
+        padding: 10px 0 0;
+        text-align: center;
+        font-size: 25px;
+    }
+}
