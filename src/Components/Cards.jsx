@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./card.css";
 
 export default function Cards(params) {
 
     const card = params.data.map(shoe => (
-        <div key={shoe.id} className="card">
+        <Link key={shoe.id} className="card" to={shoe.id}>
             <div className="image-div">
                 <img src={`/ShoesImages/id-${shoe.id}.jpg`} alt="shoe-img" className="card-img" />
             </div>
@@ -12,7 +13,7 @@ export default function Cards(params) {
                 <h1>{shoe.name}</h1>
                 <p>{`$${shoe.price}`}</p>
             </div>
-        </div>
+        </Link>
     ))
 
     return (
