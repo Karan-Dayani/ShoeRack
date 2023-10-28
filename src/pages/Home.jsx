@@ -47,6 +47,17 @@ export default function Home() {
                     </Await>
                 </Suspense>
             </div>
+
+            <div className="gender-section">
+                <div className="Gmen gender">
+                    <h1>Men</h1>
+                    <Link to="/mens">SHOP MEN</Link>
+                </div>
+                <div className="Gwomen gender">
+                    <h1>Women</h1>
+                    <Link to="/womens">SHOP WOMEN</Link>
+                </div>
+            </div>
             
             <h1>Hallo Everynian</h1>
         </>

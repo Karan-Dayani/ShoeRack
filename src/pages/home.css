@@ -36,6 +36,7 @@
 }
 
 .btn {
+    width: 200px;
     padding: 18px 30px;
     background-color: white;
     color: black;
@@ -70,6 +71,7 @@
     }
 
     .btn {
+        width: auto;
         padding: 5px;
         font-size: 4vw;
     }
@@ -158,5 +160,71 @@
         padding: 10px 0 0;
         text-align: center;
         font-size: 25px;
+    }
+}
+
+/* GENDER SECTION */
+.gender-section {
+    margin: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Gmen {
+    background: url("../assets/images/men-gender.jpg");
+}
+
+.Gwomen {
+    background: url("../assets/images/women-gender.jpg");
+}
+
+.gender {
+    background-color: rgba(0, 0, 0, 0.212);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender > h1 {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.gender > a {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width: fit-content;
+    padding: 14px 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.gender > a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .gender-section {
+        flex-direction: column;
+        margin: 40px 0;
+        gap: 0;
+    }
+
+    .gender {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
     }
 }
