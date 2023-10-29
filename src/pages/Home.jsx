@@ -4,6 +4,7 @@ import "./home.css";
 import homeAboutImg from "../assets/images/home-about-img.jpg";
 import { getShoes } from "../api";
 import Cards from "../Components/Cards";
+import ReviewCard from "../Components/ReviewCard";
 
 export function loader() {
     return defer({ shoes: getShoes()})
@@ -57,6 +58,25 @@ export default function Home() {
                     <h1>Women</h1>
                     <Link to="/womens">SHOP WOMEN</Link>
                 </div>
+            </div>
+
+            <div className="review-section">
+                <h1>Our Customers speak for us</h1>
+                <div className="review-cards">
+                    <ReviewCard
+                        review="“Felis semper duis massa scelerisque ac amet porttitor ac tellus venenatis aliquam varius mauris integer”"
+                        name="JULIA KEYS"
+                    />
+                    <ReviewCard
+                        review="“Non malesuada fringilla non varius odio in id pellentesque aliquam volutpat sapien faucibus ”"
+                        name="LUIS ADRIAN"
+                    />
+                    <ReviewCard
+                        review="“Tortor suspendisse tincidunt accumsan platea pellentesque hac.”"
+                        name="MARIA ANNA"
+                    />
+                </div>
+                <p>4.8 average rating from 69 reviews</p>
             </div>
             
             <h1>Hallo Everynian</h1>
