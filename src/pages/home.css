@@ -24,6 +24,7 @@
 }
 
 .intro-text {
+    color: white;
     margin: 0;
     text-align: center;
     font-size: 1.6vw;
@@ -182,7 +183,7 @@
 }
 
 .gender {
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(0, 0, 0, 0.546);
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
@@ -219,7 +220,8 @@
     .gender-section {
         flex-direction: column;
         margin: 40px 0;
-        gap: 0;
+        gap: 10px;
+        margin: 10px;
     }
 
     .gender {

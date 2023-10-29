@@ -78,8 +78,6 @@ export default function Home() {
                 </div>
                 <p>4.8 average rating from 69 reviews</p>
             </div>
-            
-            <h1>Hallo Everynian</h1>
         </>
     )
 }

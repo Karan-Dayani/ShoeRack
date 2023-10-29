@@ -28,7 +28,7 @@ export default function Header() {
                     className={({isActive}) => isActive ? "active-link" : null}
                     id="about"
                     to="/about"
-                >ABOUT</NavLink>
+                >OUR STORY</NavLink>
 
                 <Link
                     className="cart"
