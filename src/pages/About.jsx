@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./about.css";
 
 export default function About() {
@@ -30,10 +31,6 @@ export default function About() {
                     <h2 className="about-prod-head">Wildlife Preservation</h2>
                     <p className="about-prod-text">Pellentesque quam convallis massa enim, faucibus ornare sollicitudin gravida justo sit suspendisse pellentesque.</p>
                 </div>
-            </div>
-
-            <div className="about-shop">
-
             </div>
         </div>
     )
