@@ -57,7 +57,7 @@ export default function Header() {
                 <NavLink
                     onClick={toggleMenu}
                     to="/about"
-                >ABOUT</NavLink>
+                >OUR STORY</NavLink>
             </div>
         </>
     )
