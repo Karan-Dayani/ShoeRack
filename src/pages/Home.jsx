@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Link, useLoaderData, defer, Await } from "react-router-dom";
 import "./home.css";
-import homeAboutImg from "../assets/images/home-about-img.jpg";
+import homeAboutImg from "/assets/images/home-about-img.jpg";
 import { getShoes } from "../api";
 import Cards from "../Components/Cards";
 import ReviewCard from "../Components/ReviewCard";

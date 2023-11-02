@@ -1,7 +1,7 @@
 /* INTRO SECTION */
 .intro-img {
-    background: url("../assets/images/intro-img.jpg");
-    background-color: rgba(0, 0, 0, 0.212);
+    background: url("/assets/images/intro-img.jpg");
+    background-color: rgba(0, 0, 0, 0.416);
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;

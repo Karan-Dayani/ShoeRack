@@ -4,13 +4,16 @@ import "./about.css";
 export default function About() {
     return (
         <div className="about">
+
             <div className="about-heading">
                 <h1>Our Story</h1>
                 <p>Taking a stylish and sustainable footwear with a focus on creating a positive impact on both the world and the people</p>
             </div>
+            
             <div className="about-video">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rcfw1l2FVpjQheQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            
             <div className="about-product">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="24" height="24"><path d="M23.944,12.669l-3.031-8.66c-.42-1.202-1.559-2.01-2.832-2.01h-5.081V1c0-.552-.447-1-1-1s-1,.448-1,1v1H5.919c-1.273,0-2.412,.808-2.832,2.009L.056,12.669c-.037,.106-.056,.632-.056,.632,0,2.506,1.871,4.567,4.26,4.692,1.241,.069,2.434-.371,3.338-1.229,.892-.846,1.402-2.036,1.402-3.264,0,0-.021-.732-.061-.842L5.794,4.008c.041-.005,.083-.008,.125-.008h5.081V22H5c-.553,0-1,.448-1,1s.447,1,1,1h14c.553,0,1-.448,1-1s-.447-1-1-1h-6V4h5.081c.042,0,.084,.002,.125,.008l-3.146,8.65c-.04,.109-.061,.842-.061,.842,0,1.229,.511,2.418,1.402,3.264,.845,.802,1.828,1.229,3.339,1.229,2.391,0,4.259-2.186,4.259-4.692,0,0-.019-.526-.056-.632ZM4.364,15.997c-1.081-.057-1.986-.902-2.266-1.997H6.95c-.1,.499-.35,.954-.729,1.313-.502,.477-1.164,.719-1.856,.683Zm2.208-3.997H2.409l2.042-5.833,2.121,5.833Zm12.977-5.833l2.042,5.833h-4.163l2.121-5.833Zm.088,9.83c-.688,.036-1.354-.206-1.857-.683-.379-.36-.629-.815-.729-1.313h4.852c-.28,1.094-1.184,1.94-2.265,1.997Z"/></svg>
@@ -27,6 +30,10 @@ export default function About() {
                     <h2 className="about-prod-head">Wildlife Preservation</h2>
                     <p className="about-prod-text">Pellentesque quam convallis massa enim, faucibus ornare sollicitudin gravida justo sit suspendisse pellentesque.</p>
                 </div>
+            </div>
+
+            <div className="about-shop">
+
             </div>
         </div>
     )
