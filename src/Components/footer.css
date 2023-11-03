@@ -17,6 +17,7 @@
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 50px;
+    color: #262b2c;
 }
 
 .footer > div > ul {
@@ -42,7 +43,7 @@
 }
 
 .footer > div > ul > li > a:hover {
-    color: black;
+    color: #262b2c;
 }
 
 .media {
@@ -52,6 +53,7 @@
 .media > svg {
     margin: 24px 24px 24px 0;
     cursor: pointer;
+    fill: #262b2c;
 }
 
 .media > svg:hover {

@@ -1,6 +1,6 @@
 /* INTRO SECTION */
 .intro-img {
-    background: url("/assets/images/intro-img.jpg");
+    background-image: url("/assets/images/intro-img.jpg");
     background-color: rgba(0, 0, 0, 0.416);
     background-blend-mode: darken;
     background-position: center;
@@ -40,7 +40,7 @@
     width: 200px;
     padding: 18px 30px;
     background-color: white;
-    color: black;
+    color: #262b2c;
     text-align: center;
     letter-spacing: 1px;
     transition: 0.3s ease;
@@ -98,6 +98,7 @@
     font-weight: 500;
     width: 35vw;
     font-size: 2.7vw;
+    color: #262b2c;
 }
 
 .about-text {
@@ -109,7 +110,7 @@
 
 .about-info a {
     margin: 0;
-    color: black;
+    color: #262b2c;
     letter-spacing: 1px;
     text-decoration: underline;
     text-underline-offset: 2.5px;
@@ -117,7 +118,7 @@
     transition: 0.3s ease;
 }
 .about-info a:hover {
-    text-decoration-color: black;
+    text-decoration-color: #262b2c;
 }
 
 @media screen and (max-width: 768px) {
@@ -155,6 +156,7 @@
     padding: 30px 120px 0;
     font-size: 30px;
     font-weight: 400;
+    color: #262b2c;
 }
 
 @media screen and (max-width: 768px) {
@@ -214,7 +216,7 @@
 
 .gender > a:hover {
     background-color: white;
-    color: black;
+    color: #262b2c;
 }
 
 @media screen and (max-width: 768px) {
@@ -243,6 +245,7 @@
     font-size: 2.22rem;
     font-weight: 400;
     margin: 5px;
+    color: #262b2c;
 }
 
 .review-section > p {
