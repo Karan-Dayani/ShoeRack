@@ -266,6 +266,11 @@ createServer({
             return schema.shoes.all()
         })
 
+        this.get("/shoes/:id", (schema, request) => {
+            const id = request.params.id
+            return schema.shoes.find(id)
+        })
+
         this.get("/mens", (schema, request) => {
             return schema.shoes.where({ gender: "Men" })
         })

@@ -1,0 +1,103 @@
+.shoe-detail-container {
+    display: flex;
+    margin: 30px 0 0;
+    justify-content: space-evenly;
+}
+
+.shoe-detail-img {
+    width: 35%;
+}
+
+.shoe-detail-right {
+    width: 40%;
+}
+
+.info-brand {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0 0 1em 0;
+    color: #6e7051;
+}
+
+.info-name {
+    margin: 0 0 0.5em 0;
+    line-height: 1.2;
+    font-size: 30px;
+    font-weight: 400;
+    color: #262b2c;
+}
+
+.info-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #979a9b;
+    margin: 0 0 0.2em 0;
+}
+
+.info-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.shoe-buy {
+    display: flex;
+    gap: 25px;
+}
+
+.quantity-count {
+    width: 150px;
+    font-size: 1.1rem;
+    display: flex;
+}
+
+.quantity-count > span {
+    color: #262b2c;
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #979a9b;
+    line-height: 2;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.increase, .decrease {
+    cursor: pointer;
+}
+
+.add-cart-btn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    background-color: #6e7051;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .shoe-detail-container {
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    .shoe-detail-img, .shoe-detail-right {
+        width: 100%;
+    }
+
+    .shoe-detail-img {
+        margin-bottom: 15px;
+    }
+
+    .shoe-detail-info > p {
+        text-align: left;
+    }
+
+    .quantity-count {
+        width: 50%;
+    }
+}
