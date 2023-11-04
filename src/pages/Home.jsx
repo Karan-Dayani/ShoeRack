@@ -5,6 +5,7 @@ import homeAboutImg from "/assets/images/home-about-img.jpg";
 import { getShoes } from "../api";
 import Cards from "../Components/Cards";
 import ReviewCard from "../Components/ReviewCard";
+import Loading from "../Components/Loading";
 
 export function loader() {
     return defer({ shoes: getShoes()})
@@ -38,7 +39,7 @@ export default function Home() {
 
             <div className="best-seller">
                 <h1>Our Best Seller</h1>
-                <Suspense fallback={<h1>Loading...</h1>}>
+                <Suspense fallback={<Loading />}>
                     <Await resolve={shoesObj.shoes}>
                         {(shoes) => {
                             const shuffled = shoes.sort(() => 0.5 - Math.random());

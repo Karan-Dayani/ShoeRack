@@ -3,6 +3,7 @@ import { useLoaderData, defer, Await } from "react-router-dom";
 import "./womens.css";
 import { getShoes } from "../api";
 import Cards from "../Components/Cards";
+import Loading from "../Components/Loading";
 
 export function loader() {
     return defer({ shoes: getShoes("womens")})
@@ -14,7 +15,7 @@ export default function Mens() {
     return (
         <div className="women">
             <h1 className="women-title">Women</h1>
-            <Suspense fallback={<h1>Loading...</h1>}>
+            <Suspense fallback={<Loading />}>
                 <Await resolve={shoesObj.shoes}>
                     {(shoes) => <Cards data={shoes} />}
                 </Await>
