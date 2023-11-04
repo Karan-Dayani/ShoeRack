@@ -22,7 +22,9 @@ export default function ShoeDetail() {
     return (
         <div className="shoe-detail-page">
             <div className="shoe-detail-container">
-                <img src={`/assets/ShoesImages/id-${shoe.id}.jpg`} alt="shoe-img" className="shoe-detail-img" />
+                <div className="shoe-detail-img-div">
+                    <img src={`/assets/ShoesImages/id-${shoe.id}.jpg`} alt="shoe-img" className="shoe-detail-img" />
+                </div>
                 <div className="shoe-detail-right">
                     <div className="shoe-detail-info">
                         <p className="info-brand">{shoe.brand}</p>

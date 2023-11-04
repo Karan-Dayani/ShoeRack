@@ -4,8 +4,15 @@
     justify-content: space-evenly;
 }
 
-.shoe-detail-img {
+.shoe-detail-img-div {
     width: 35%;
+    overflow: hidden;
+    display: block;
+}
+
+.shoe-detail-img {
+    width: 100%;
+    transition: 0.3s ease;
 }
 
 .shoe-detail-right {
@@ -85,11 +92,11 @@
         margin: 0 15px;
     }
 
-    .shoe-detail-img, .shoe-detail-right {
+    .shoe-detail-img-div, .shoe-detail-right {
         width: 100%;
     }
 
-    .shoe-detail-img {
+    .shoe-detail-img-div {
         margin-bottom: 15px;
     }
 
