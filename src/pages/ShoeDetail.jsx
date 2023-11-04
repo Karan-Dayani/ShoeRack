@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./shoeDetail.css"
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, defer, Await} from "react-router-dom";
 import { getShoe } from "../api";
+import Loading from "../Components/Loading";
 
 export function loader({ params }) {
-    return getShoe(params.id)
+    return defer({shoe: getShoe(params.id)})
 }
 
 export default function ShoeDetail() {
@@ -20,30 +21,36 @@ export default function ShoeDetail() {
     }
 
     return (
-        <div className="shoe-detail-page">
-            <div className="shoe-detail-container">
-                <div className="shoe-detail-img-div">
-                    <img src={`/assets/ShoesImages/id-${shoe.id}.jpg`} alt="shoe-img" className="shoe-detail-img" />
-                </div>
-                <div className="shoe-detail-right">
-                    <div className="shoe-detail-info">
-                        <p className="info-brand">{shoe.brand}</p>
-                        <h1 className="info-name">{shoe.name}</h1>
-                        <h1 className="info-price">{`$${shoe.price}`}</h1>
-                        <p className="info-description">Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.</p>
-                    </div>
-                    <div className="shoe-buy">
-                        <div className="quantity-count">
-                            <span className="decrease" onClick={decQuan}>-</span>
+        <Suspense fallback={<Loading />}>
+            <Await resolve={shoe.shoe}>
+                {(shoe) => (
+                    <div className="shoe-detail-page">
+                        <div className="shoe-detail-container">
+                            <div className="shoe-detail-img-div">
+                                <img src={`/assets/ShoesImages/id-${shoe.id}.jpg`} alt="shoe-img" className="shoe-detail-img" />
+                            </div>
+                            <div className="shoe-detail-right">
+                                <div className="shoe-detail-info">
+                                    <p className="info-brand">{shoe.brand}</p>
+                                    <h1 className="info-name">{shoe.name}</h1>
+                                    <h1 className="info-price">{`$${shoe.price}`}</h1>
+                                    <p className="info-description">Auctor eros suspendisse tellus venenatis sodales purus non pellentesque amet, nunc sit eu, enim fringilla egestas pulvinar odio feugiat consectetur egestas magna pharetra cursus risus, lectus enim eget eu et lobortis faucibus.</p>
+                                </div>
+                                <div className="shoe-buy">
+                                    <div className="quantity-count">
+                                        <span className="decrease" onClick={decQuan}>-</span>
 
-                            <span className="quantt">{quantity}</span>
+                                        <span className="quantt">{quantity}</span>
 
-                            <span className="increase" onClick={incQuan}>+</span>
+                                        <span className="increase" onClick={incQuan}>+</span>
+                                    </div>
+                                    <button className="add-cart-btn">ADD TO CART</button>
+                                </div>
+                            </div>
                         </div>
-                        <button className="add-cart-btn">ADD TO CART</button>
                     </div>
-                </div>
-            </div>
-        </div>
+                )}
+            </Await>
+        </Suspense>
     )
 }
