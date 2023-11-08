@@ -86,6 +86,21 @@
     cursor: pointer;
 }
 
+.buy-options {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #979a9b;
+    padding-top: 15px;
+}
+
+.buy-options > svg {
+    width: 100px;
+    border: 1px solid #979a9b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .shoe-detail-container {
         flex-direction: column;
