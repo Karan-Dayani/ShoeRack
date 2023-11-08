@@ -2,7 +2,8 @@ import { createServer, Model, Response } from "miragejs";
 
 createServer({
     models: {
-        shoes: Model
+        shoes: Model,
+        cartItems: Model
     },
 
     seeds(server) {
@@ -262,6 +263,15 @@ createServer({
         this.namespace = "api"
         this.logging = false
         this.timing = 1000
+
+        this.get("/cart", (schema, request) => {
+            return schema.cartItems.all()
+        })
+
+        this.post("/cart", (schema, request) => {
+            const post = JSON.parse(request.requestBody);
+            schema.cartItems.create(post)
+        })
 
         this.get("/shoes", (schema, request) => {
             return schema.shoes.all()

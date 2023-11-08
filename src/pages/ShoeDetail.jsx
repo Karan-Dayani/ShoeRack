@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "./shoeDetail.css"
 import { useLoaderData, defer, Await} from "react-router-dom";
-import { getShoe } from "../api";
+import { getShoe, addCart } from "../api";
 import Loading from "../Components/Loading";
 
 export function loader({ params }) {
@@ -49,7 +49,7 @@ export default function ShoeDetail() {
 
                                         <span className="increase" onClick={incQuan}>+</span>
                                     </div>
-                                    <button className="add-cart-btn">ADD TO CART</button>
+                                    <button className="add-cart-btn" onClick={() => addCart(shoe)}>ADD TO CART</button>
                                 </div>
 
                             </div>

@@ -16,7 +16,7 @@ import Mens, { loader as mensShoesLoader} from "./pages/Mens";
 import Womens, { loader as womensShoesLoader} from "./pages/Womens";
 
 import About from "./pages/About";
-import Cart from "./pages/Cart";
+import Cart, {loader as cartLoader} from "./pages/Cart";
 
 import ShoeDetail, {loader as shoeDetailLoader} from "./pages/ShoeDetail.jsx";
 
@@ -32,7 +32,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="womens/:id" element={<ShoeDetail />} loader={shoeDetailLoader} />
 
         <Route path="about" element={<About />} />
-        <Route path="cart" element={<Cart />} />
+        <Route path="cart" element={<Cart />} loader={cartLoader} />
     </Route>
 ))
 
