@@ -1,0 +1,137 @@
+.cart-title {
+    text-align: center;
+    color: #262b2c;
+    font-size: 4.6vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cart-items-pc {
+    text-align: left;
+    width: 68%;
+    margin: 0 auto;
+    border-spacing: 0;
+    border: 1px solid #dddddd;
+    border-bottom: 0;
+}
+
+.cart-items-pc > thead {
+    color: #979a9b;
+    background-color: #f1f1ef;
+    height: 60px;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cart-prod-img {
+    width: 135px;
+}
+
+.cart-prod-img > div {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-prod-img > div > img {
+    width: 120px;
+    padding: 15px;
+}
+
+.cart-prod-name {
+    color: #6e7051;
+}
+
+.cart-prod-price, .cart-prod-quantity, .cart-prod-subtotal {
+    color: #979a9b;
+}
+
+.cart-total {
+    width: 68%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1ef;
+    height: 60px;
+    border: 1px solid #dddddd;
+}
+
+.cart-total > p {
+    color: #6e7051;
+}
+
+.cart-items-mob, .cart-item-mob {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-title {
+        font-size: 10vw;
+    }
+
+    .cart-items-pc, .cart-item-pc {
+        display: none;
+    }
+
+    .cart-items-mob, .cart-item-mob {
+        display: contents;
+    }
+}
+
+.cart-item-mob > .cart-prod-img {
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+
+.cart-item-mob > .cart-prod-img > img {
+    width: 100px;
+    padding: 5px;
+}
+
+.cart-item-mob > .cart-prod-item {
+    display: flex;
+    justify-content: space-between; 
+    padding: 5px;
+    margin: auto 15px;
+    border:  1px solid #dddddd;
+    border-top: 0;
+}
+
+.cart-item-mob > .cart-prod-item > p {
+    margin: 0;
+}
+
+.cart-item-mob > .cart-prod-name > p {
+    color: #6e7051;
+}
+
+.cart-item-mob > .cart-prod-name::before {
+    content: "Product : ";
+    font-weight: 600;
+    color: #979a9b;
+}
+.cart-item-mob > .cart-prod-price::before {
+    content: "Price : ";
+    font-weight: 600;
+    color: #979a9b;
+}
+.cart-item-mob > .cart-prod-quantity::before {
+    content: "Quantity : ";
+    font-weight: 600;
+    color: #979a9b;
+}
+.cart-item-mob > .cart-prod-subtotal::before {
+    content: "Sub Total : ";
+    font-weight: 600;
+    color: #979a9b;
+}

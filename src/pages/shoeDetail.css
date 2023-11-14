@@ -84,6 +84,11 @@
     border: none;
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.add-cart-btn:hover {
+    background-color: #262b2c;
 }
 
 .buy-options {

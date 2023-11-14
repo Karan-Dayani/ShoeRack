@@ -49,7 +49,7 @@ export default function ShoeDetail() {
 
                                         <span className="increase" onClick={incQuan}>+</span>
                                     </div>
-                                    <button className="add-cart-btn" onClick={() => addCart(shoe)}>ADD TO CART</button>
+                                    <button className="add-cart-btn" onClick={() => addCart({...shoe, quantity: quantity})}>ADD TO CART</button>
                                 </div>
 
                             </div>
