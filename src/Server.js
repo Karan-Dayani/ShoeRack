@@ -262,11 +262,10 @@ createServer({
     routes() {
         this.namespace = "api"
         this.logging = false
-        this.timing = 1000
 
         this.get("/cart", (schema, request) => {
             return schema.cartItems.all()
-        })
+        }, { timing: 500 })
 
         this.post("/cart", (schema, request) => {
             const post = JSON.parse(request.requestBody);
@@ -275,19 +274,19 @@ createServer({
 
         this.get("/shoes", (schema, request) => {
             return schema.shoes.all()
-        })
+        }, { timing: 500 })
 
         this.get("/shoes/:id", (schema, request) => {
             const id = request.params.id
             return schema.shoes.find(id)
-        })
+        }, { timing: 500 })
 
         this.get("/mens", (schema, request) => {
             return schema.shoes.where({ gender: "Men" })
-        })
+        }, { timing: 500 })
 
         this.get("/womens", (schema, request) => {
             return schema.shoes.where({ gender: "Women"})
-        })
+        }, { timing: 500 })
     }
 })
