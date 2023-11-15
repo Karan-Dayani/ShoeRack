@@ -86,9 +86,12 @@ export default function Cart() {
                                         {cartitems}
                                     </div>
 
-                                    <div className="cart-total">
-                                        <p>Grand Total</p>
-                                        <p>${grandTotal}</p>
+                                    <div className="cart-footer">
+                                        <div className="cart-total">
+                                            <p>Grand Total</p>
+                                            <p>${grandTotal}</p>
+                                        </div>
+                                        <Link className="checkout-btn" to="/">CHECK OUT</Link>
                                     </div>
                                 </>
                             )
