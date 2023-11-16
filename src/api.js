@@ -41,8 +41,8 @@ export async function getCart() {
 }
 
 export async function addCart(shoe) {
-    fetch("/api/cart", {
+    fetch("/api/cartCreate", {
         method: "POST",
         body: JSON.stringify(shoe),
     });
-} 
+}

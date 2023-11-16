@@ -267,7 +267,7 @@ createServer({
             return schema.cartItems.all()
         }, { timing: 500 })
 
-        this.post("/cart", (schema, request) => {
+        this.post("/cartCreate", (schema, request) => {
             const post = JSON.parse(request.requestBody);
             schema.cartItems.create(post)
         })
