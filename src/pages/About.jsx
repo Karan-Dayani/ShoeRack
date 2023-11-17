@@ -12,7 +12,7 @@ export default function About() {
             </div>
             
             <div className="about-video">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rcfw1l2FVpjQheQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=E_EnjVb9krwZfFW0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             
             <div className="about-product">

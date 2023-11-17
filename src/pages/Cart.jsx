@@ -45,7 +45,6 @@ export default function Cart() {
                             })
 
                             const cartItemsMob = shoes.map(shoe => {
-                                grandTotal += grandTotal += (shoe.price * shoe.quantity);
                                 return (
                                     <div className="cart-item-mob" key={shoe.id}>
                                             <div className="cart-prod-img">
