@@ -272,6 +272,12 @@ createServer({
             schema.cartItems.create(post)
         })
 
+        this.post("/cartDestroy", (schema, request) => {
+            const post = JSON.parse(request.requestBody);
+            const shoe = schema.cartItems.where({ id: post})
+            shoe.destroy()
+        })
+
         this.get("/shoes", (schema, request) => {
             return schema.shoes.all()
         }, { timing: 500 })

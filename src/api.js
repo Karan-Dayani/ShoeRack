@@ -46,3 +46,10 @@ export async function addCart(shoe) {
         body: JSON.stringify(shoe),
     });
 }
+
+export async function removeCart(id) {
+    fetch("/api/cartDestroy", {
+        method: "POST",
+        body: JSON.stringify(id),
+    });
+}

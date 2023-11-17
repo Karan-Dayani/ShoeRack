@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+.cart-prod-remove > svg {
+    fill: #979a9b;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
 .cart-items-pc {
     text-align: left;
     width: 68%;
@@ -127,6 +133,10 @@ td {
 
 .cart-item-mob>.cart-prod-name>p {
     color: #6e7051;
+}
+
+.cart-item-mob>.cart-prod-remove>svg {
+    margin: auto;
 }
 
 .cart-item-mob>.cart-prod-name::before {
